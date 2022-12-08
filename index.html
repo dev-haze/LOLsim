@@ -8,80 +8,21 @@
     <body><!---------------------------------body-->
        
     </body>
-   
-    <script>//main----------------------main_seq---
-        var test = new constructor_test(1,2);
-        test.print_data();
-       
-    </script>
-   
-    <script>//fclass-------------------------fclass--
-        
-    </script>
-    <script>//itemclass-------------------------fclass--
-            
-    </script>
-    <script>//champclass---------------------------champclass
-    class health_stat{//체력,체젠, 피흡률   방어막,물방,마방, 강인함(Tenacity)
-        constructor(HP,HG,HS, Shield,AR,MR, tenacity){
-
-        }
-    }
-    class skill_stat{//마나,마젠,주문력,마관, 쿨탐,
-        constructor(MP,MG, AP, ArPen, CoolT,){
-
-        }
-    }
-    class atk_stat{//물리공격력, 물
-        constructor(AD,AR, )
-    }
-
-
-
-    class Stat{
-        
-    }
     
-    class Champ{
-        // constructor(mana_stat, health_stat, skill_stat){
-        //     this.m=mana_stat;
-        //     this.h=health_stat;
-        //     this.s=skill_stat;
-        // }
-        //          타입,체력,체젠,피흡률   방어막,물방,마방, 강인함(Tenacity)
-        constructor(type, HP,HG,HS, Shield,AR,MR, tenacity,
-                    //마나,마젠,주문력,마관, 쿨탐,
-                    MP,MG, AP, ArPen, CoolT
-                    //평타공격력, 공속, 공격사거리, 치명타확률,치명타뎀
-                    
-                      ){
-            this.type = type;
-        }
+    <script src="champ/test.js"></script>
+
+    <script>
+        import champ_frame from "./champ/champ_frame.js";
+
+        let notilus = new champ_frame();
+        
 
 
-        Q(){
-            //on/off 여부*
-            //해당챔프스탯 변화*
-            //사용 시 데미지
-            
-        }
-        W(){
 
-        }
-        E(){
-
-        }
-        R(){
-
-        }
-    }
-
-    class Dummy{
-        constructor(hp, shield, tena, is_dead, )
-    }
 
 
     </script>
+
 
     <script>
         /*<계산될 결과 종류>
@@ -106,7 +47,6 @@
        //특정 챔프 더미
 
     </script>
-
 </html>
 
 

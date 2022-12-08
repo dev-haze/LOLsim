@@ -1,4 +1,4 @@
-class champ_frame{
+export class champ_frame{
     constructor(){
         this.hp = 1;
         this.hpgen=1;
@@ -9,7 +9,7 @@ class champ_frame{
     }
 
     Q(){
-
+         
     }
     W(){
 
@@ -19,6 +19,10 @@ class champ_frame{
     }
     R(){
 
+    }
+
+    test(){
+        alert("test");
     }
 }
 
