@@ -1,7 +1,5 @@
+import Champ_stat from "./champ_stat";
 
-export  default class Champ_frame{
-    
-}
 
 
 
