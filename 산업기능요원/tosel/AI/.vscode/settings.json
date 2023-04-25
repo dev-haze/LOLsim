@@ -1,0 +1,44 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "www.tosel.org",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "tosel",
+            "username": "root",
+            "password": "dlfha!@#",
+            "database": "tosel"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "www.tosel.org",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "toselmysql",
+            "database": "tosel",
+            "username": "root",
+            "password": "dlfha!@#"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "121.125.64.181",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "jtosel",
+            "database": "jtosel",
+            "username": "root",
+            "password": "tosel!@#",
+            "connectionTimeout": 50
+        }
+    ]
+}

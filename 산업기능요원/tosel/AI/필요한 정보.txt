@@ -1,0 +1,8 @@
+<table1 - name : receipt> // 신청정보 : 
+receipt_no receipt_date name gradelevel 
+
+
+<table2 - name : exam_result>
+receipt_no, exam_date, totalscore, 
+
+

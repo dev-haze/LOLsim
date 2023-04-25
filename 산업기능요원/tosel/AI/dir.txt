@@ -1,0 +1,175 @@
+121.125.64.190
+3306
+dlfha!@#
+
+121.125.64.181
+
+
+
+<받은 거>
+DB, 서버 동일합니당
+121.125.64.178 - 리뉴얼
+root - ID
+dlfha!@# - Password
+
+토셀 관련 코드는
+프레임워크 : STS 3.X (4.X 써도 무관)
+서버 : Tomcat 8.5
+DB 툴 : HieldSQL, DataGrip
+
+파트별 경로 :
+(1) PC용 페이지 : /WEB-INF/views/new
+(2) Mobile용 페이지 :/WEB-INF/views/m
+(3) Admin 페이지 : /WEB-INF/views/admin
+(4) 리딩시리즈 포트폴리오 (제작중단) : /WEB-INF/views/pf (190서버)
+(5) 이미지 : /images
+(6) 스타일시트 :/css
+(7) Jquery : /js
+(8) Java : /src/main/java/com/er
+
+
+hielt : 일반조회 & 송장출력
+datagrip : 단체인원 수정 등(편집 용이)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TOSEL tosel Tables>
+    exam_result_table
+    receipt2
+    receipt_2
+    apply_base_n
+
+
+
+    cocoon_exam_result
+    examgrade_set
+
+
+
+TOSEL mysql Tables tosel Tables exam_res31 ~42
+
+
+
+
+create table stud_dat_test_jay
+(   name    char(5),
+     )
+
+
+
+
+
+CREATE TYPE Stud AS OBJECT (
+
+stud_name char(5),
+stud_mobile NUMBER,
+stud_email char(30),
+stud_addr1 char(35),
+stud_addr2 char(20),
+stud_birth DATE,
+stud_id char(20),
+stud_group_name char(20),
+stud_accountNo number,
+
+
+
+
+);
+
+
+
+
+CREATE or REPLACE TYPE EXAM AS OBJECT (    
+    exam_no      number(50),
+    receipt_no   number(50),
+    score10per   numeric(50),
+    score30per   numeric(50),
+    average      numeric(50),
+    avg_all      numeric(50),
+    totalscore   numeric(50),
+    sec1_1       numeric(50),
+    sec1_2       numeric(50),
+    sec1_3       numeric(50),
+    sec1_4       numeric(50),
+    sec1_5       numeric(50),
+    sec2_1       numeric(50),
+    sec2_2       numeric(50),
+    sec2_3       numeric(50),
+    sec2_4       numeric(50),
+    sec2_5       numeric(50),
+    most_max     numeric(50),
+    least_max    numeric(50),
+    grade_class  numeric(50),
+    sec1_1       numeric(50)
+);
+
+
+
+
+
+
+CREATE Table Data_archive(
+
+stud_name char(5),
+stud_mobile NUMBER,
+stud_email char(30),
+stud_addr1 char(35),
+stud_addr2 char(20),
+stud_birth DATE,
+stud_id char(20),
+stud_group_name char(20),
+stud_accountNo number,
+
+ exam_no      number(50),
+receipt_no   number(50),
+    score10per   numeric(50),
+    score30per   numeric(50),
+    average      numeric(50),
+    avg_all      numeric(50),
+    totalscore   numeric(50),
+    sec1_1       numeric(50),
+    sec1_2       numeric(50),
+    sec1_3       numeric(50),
+    sec1_4       numeric(50),
+    sec1_5       numeric(50),
+    sec2_1       numeric(50),
+    sec2_2       numeric(50),
+    sec2_3       numeric(50),
+    sec2_4       numeric(50),
+    sec2_5       numeric(50),
+    most_max     numeric(50),
+    least_max    numeric(50),
+    grade_class  numeric(50),
+    sec1_1       numeric(50)
+
+
+
+
+
+);
+
+
+create table exam_result_united
+select idx, gradeturn, gradelevel, receipt_no, 
+grade_multi, grade_multi_a, grade_multi_b, grade_multi_c, grade_multi_d, grade_multi_e, 
+grade_multi2, grade_multi2_a, grade_multi2_b, grade_multi2_c, grade_multi2_d, grade_multi2_e, 
+grade_class
+from exam_result
+
+union
+
+select idx, gradeturn, gradelevel, receipt_no,
+grade_multi, grade_multi_a, grade_multi_b, grade_multi_c, grade_multi_d, grade_multi_e, 
+grade_multi2, grade_multi2_a, grade_multi2_b, grade_multi2_c, grade_multi2_d, grade_multi2_e, 
+grade_class
